@@ -1,11 +1,17 @@
-//button shows clicked in console when its clicked
-//the only thing rendering to the page right now is the names and im not sure why.
-//I checked the console, checked each component as well as the structure, as far as I know I dont have any syntax errors at least not any that are showing up in the console
-//The only thing its registering from the PersonCard is the name element so Im not sure
+//imported PersonCard file from created components folder
+//imported Greeting file created from components folder
+//imported Button file created from components folder
 import PersonCard from "./components/PersonCard.jsx";
 import Greeting from "./components/Greeting.jsx";
 import Button from "./components/Button.jsx";
-
+//created a function called App that will be "main page"
+//created a function called handleClick that will listen for when user clicks a button on the screen and console log "the button was clicked!"
+//the return key is what will help each component render/display to the screen
+//Created an h1 element that will hold each personCard component which includes the following props: name,age,and occupation
+//each prop holds a key value
+//created another h1 element that will hold the added component that I created called "Greeting" which has a prop of "name" the value of "Deja"
+//lastly I created an h1 element that will hold the added button component and it has a prop of "text" and "onClick" and text has a value of "Click Me!","Second button", and "Third button"
+//export default App is used to export all app code into another server if needed
 function App() {
   function handleClick() {
     console.log("Button clicked!");
